@@ -1,0 +1,705 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topSite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 84.5rem;
+    height: 4.375rem;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.logo {
+    margin-left: 8.5rem;
+    font-size: 2rem;
+    color: #08A6E4;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menuContainer {
+    margin-right: 8.5rem;
+    height: 100%;
+}
+.menu {
+    display: flex;
+    height: 100%;
+}
+
+.menuElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 5.875rem;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    color: #A5A5A5;
+    letter-spacing: 0.170rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.menuElement:hover {
+    color: #000000;
+    cursor: pointer;
+    border-bottom: 2px solid #08A6E4;
+}
+
+.mainBanner {
+    height: calc(100vh - 4.375rem);
+    width: 84.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.bannerContent {
+    height: 40rem;
+    width: 27.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bannerElement {
+    margin-top: 2.25rem;
+}
+.bannerTitle {
+    color: #000000;
+    font-size: 3.0625rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bannerInfo {
+    color: black;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bannerButton {
+    margin-top: 6rem;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    height: 4.1875rem;
+    width: 27.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    background-color: #08A6E4;
+    color: white;
+}
+
+.generalInfo {
+    width: 84.5rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    height: 50%;
+    width: 65%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    margin-top: 4rem;
+}
+
+.iconElement {
+    width: 12.625rem;
+    height: 12.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.circlee {
+    width: 3.9375rem;
+    height: 3.9375rem;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #FB3B64;
+}
+
+.blue {
+    background-color: #08A6E4;
+}
+
+.green {
+    background-color: #55DFB4;
+}
+
+.iconText {
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.3556rem;
+}
+
+.iconText2 {
+    font-size: 1.0625rem;
+    color: #A5A5A5;
+    font-family: 'Raleway', sans-serif;
+}
+
+.circlee, .red {
+    position: relative;
+}
+
+.additionalIconPerson {
+    position: absolute;
+    left: 2rem;
+    top: 0.3rem;
+}
+
+.circlee, .blue {
+    position: relative;
+}
+
+
+.additionalIconEye {
+    position: absolute;
+    left: 1.4rem;
+    top: 0.9rem;
+}
+
+.circlee, .green {
+    position: relative;
+}
+
+
+.additionalIconCatalog {
+    position: absolute;
+    left: 2rem;
+    top: 0.4rem;
+}
+
+.articles {
+    width: 99vw;
+    height: 150vh;
+    background-color:#F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.article {
+    width: 70.25rem;
+    height: 23.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles .article:nth-of-type(1), .articles .article:nth-of-type(2) {
+    background-color: white;
+}
+
+.articleInfo {
+    height: 100%;
+    width: 55%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.articleInfo div {
+    height: 60%;
+    width: 70%;
+}
+
+
+.article .articleInfo .firstInfoDiv {
+    height: 43%;
+    position: relative;
+}
+
+.article .articleInfo .firstInfoDiv:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 20rem;
+    left: 0;
+    bottom: 0;
+    border-bottom: 4px solid #FB3B64;
+}
+
+
+.article .articleInfo .lastInfoDiv {
+    width: 95%;
+    position: relative;
+}
+
+.article .articleInfo .lastInfoDiv:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 20rem;
+    left: 0;
+    bottom: 0;
+    border-bottom: 4px solid #55DFB4;
+}
+
+.article .articleInfo .middleInfoDiv {
+    width: 88%;
+    position: relative;
+}
+
+.article .articleInfo .middleInfoDiv:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 20rem;
+    left: 0;
+    bottom: 0;
+    border-bottom: 4px solid #08A6E4;
+}
+
+
+.articleInfo .articleTitle {
+    font-size: 2.25rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1.875rem;
+}
+
+.shorterArticleInfo {
+    width: 44%;
+}
+
+.articleInfo .articleContent {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2rem;
+}
+
+.lastArticlePicture {
+    width: 40%;
+    height: 100%;
+    background-color: #55DFB4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleArticlePicture {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstArticlePicture {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstArticlePicture .diamond {
+    width: 11rem;
+    height:11rem;
+    background-color: #FB3B64;
+    transform: rotate(45deg);
+    border-radius: 1.5625rem;
+    position: relative;
+}
+
+.macbook {
+    transform: rotate(-45deg) scale(0.5);
+    position: absolute;
+    bottom: -16rem;
+    left: -22rem;
+}
+
+.trumpet {
+    transform: scale(0.5);
+}
+
+.circle {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    background-color: #08A6E4;
+    position: relative;
+}
+
+.phone {
+    transform: scale(0.45);
+    position: absolute;
+    bottom: -13rem;
+    left: -14rem;
+}
+
+.offers {
+    height: 100vh;
+    width: 84.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.offersTitle {
+    font-size: 2.25rem;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 4em;
+}
+
+.threeVariants {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 6rem;
+}
+
+.detailOffer {
+    width: 23.25rem;
+    height: 28.8125rem;
+    border-radius: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.threeVariants .detailOffer:nth-of-type(1) {
+    border: 1px solid #EB476E;
+    position: relative;
+}
+
+.threeVariants .detailOffer:nth-of-type(2){
+    border: 1px solid #07ACE6;
+    transform: scale(1.1);
+    box-shadow: 5px 10px 27px #07ACE629;
+    position: relative;
+}
+
+.threeVariants .detailOffer:nth-of-type(3){
+    border: 1px solid #55DFB4;
+    position: relative;
+}
+
+.variantTitle {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.variantTitle h1 {
+    font-size: 1.3125rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.variantTitle p:first-of-type {
+    font-size: 2.875rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+.variantTitle p:nth-of-type(2) {
+    font-size: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.variantDetails {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.variantList li {
+    font-weight: 400;
+    font-size: 0.875rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.threeVariants .detailOffer:first-of-type p:first-of-type {
+    color: #FB3B64;
+}
+.threeVariants .detailOffer:nth-of-type(2) p:first-of-type {
+    color: #07ACE6;
+}
+.threeVariants .detailOffer:nth-of-type(3) p:first-of-type {
+    color: #55DFB4;
+}
+
+.variantList .checked::before {
+
+    font-family: "Font awesome 5 Free";
+    content: "\f14a";
+    font-size: 0.8rem;
+    color: #55DFB4;
+    margin-right: 0.3rem;
+}
+
+.variantList .unchecked::before {
+
+    font-family: "Font awesome 5 Free";
+    content: "\f057";
+    font-size: 0.8rem;
+    color: #FB3B64;
+    margin-right: 0.3rem;
+}
+
+.threeVariants .detailOffer:nth-of-type(1) .offerButton{
+    position: absolute;
+    bottom: -1.5625rem;
+    left: 7rem;
+    width: 9.375rem;
+    height: 3.125rem;
+    border-radius: 1.4375rem;
+    border: none;
+    background-color:#FB3B64;
+    color: white;
+    font-size: 0.8125rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+.threeVariants .detailOffer:nth-of-type(2) .offerButton{
+    position: absolute;
+    bottom: -1.5625rem;
+    left: 6.5rem;
+    width: 10.3125rem;
+    height: 3.125rem;
+    border-radius: 1.4375rem;
+    border: none;
+    background-color:#07ACE6;
+    color: white;
+    font-size: 0.8125rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.threeVariants .detailOffer:nth-of-type(3) .offerButton{
+    position: absolute;
+    bottom: -1.5625rem;
+    left: 7rem;
+    width: 9.375rem;
+    height: 3.125rem;
+    border-radius: 1.4375rem;
+    border: none;
+    background-color:#55DFB4;
+    color: white;
+    font-size: 0.8125rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.formSection {
+    width: 84.5rem;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.formContainer {
+    height: 23.5rem;
+    width: 56rem;
+    display: flex;
+}
+
+.formInfo, .formDiv {
+    height: 100%;
+    width: 50%;
+}
+
+.formInfo h1 {
+    font-size: 3.0625rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.formInfo p {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 3rem;
+}
+
+.formInfo ul {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.formInfo li {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #A5A5A5;
+    font-weight: 600;
+
+}
+
+.formInfo li:nth-of-type(2){
+    margin-left: 1.25rem;
+}
+
+.formInfo li:nth-of-type(1)::before{
+    font-family: "Font awesome 5 Free";
+    color:#07ACE6;
+    content: "\f0e0";
+    margin-right: 1rem;
+}
+
+.formInfo li:nth-of-type(2)::before{
+    font-family: "Font awesome 5 Free";
+    color:#07ACE6;
+    content: "\f095";
+    margin-right: 1rem;
+}
+
+.form label, .form .formName, .form .formEmail {
+    display: block;
+}
+
+.form .formName, .form .formEmail {
+    border-top: none;
+    border-left: none ;
+    border-right: none;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 100% ;
+}
+
+.form label {
+    color:#08A6E4;
+    font-size: 0.6875rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1865rem;
+    font-weight: 700;
+}
+
+
+.form p {
+    font-size: 0.75rem;
+    color: #707070;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    width: 80%;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.form .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 11.125rem;
+    height: 2.8625rem;
+    background-color:#08A6E4 ;
+    border-radius: 2.1875rem;
+    border: none;
+    font-size: 0.8rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.formCheckbox {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color:#08A6E4;
+}
+
+.footer {
+    height: 5.625rem;
+    width: 84.5rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px -5px 40px #00000029;
+
+}
+
+.footerLogo, .footerIcons {
+    height: 100%;
+    width: 28%;
+}
+
+.footerLogo h1 {
+    font-size: 1.625rem;
+    color: #08A6E4;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+}
+
+.footerLogo p {
+    font-size: 0.6875rem;
+    color: #A5A5A5;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 2rem;
+}
+
+.footerIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.twitter {
+    margin-right: 1rem;
+}
+
+
+
